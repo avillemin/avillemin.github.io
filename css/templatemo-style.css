@@ -305,10 +305,15 @@ hr {
 }
 
 h3.profile-title {
+  text-align: center;
   margin-bottom: 5px;
   color: white;
   font-size: 18px;
   font-family: 'robotobold';
+}
+
+.profile-description{
+	text-align: center;
 }
 
 .main-navigation {
@@ -379,7 +384,7 @@ h3.profile-title {
     margin-right: 30px;
   }
   .responsive-header .profile-content {
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     overflow: hidden;
   }
@@ -388,6 +393,7 @@ h3.profile-title {
 @media screen and (max-width: 992px) {
   .top-section {
     padding-bottom: 0;
+	text-align: center;
   }
 }
 
