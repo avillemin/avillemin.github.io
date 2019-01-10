@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h4.widget-title {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'robotobold';
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -501,10 +501,23 @@ h3.profile-title {
 
 }
 
+.tick{
+	width:40px;
+	float:right;
+	margin:12px;
+	
+}
+
+.flag{
+	width:24px;
+}
+
 .card-text{
 	padding:20px;
 	padding-left:50px;
+	
 }
+
 
 
 
@@ -549,6 +562,24 @@ h3.profile-title {
 	padding-left: 160px;
 	font-size: 150%;
 	color:white;
+}
+
+.card-title-left{
+	width: 200px;
+	height:	64px;
+    float:left;
+	position:relative;
+    background-color: rgba(13, 36, 85, .6);
+	text-align: center;
+	vertical-align:center;
+	color:white;
+	margin-right:10px;
+}
+
+.card-title-left p {
+	height:	100%;
+	line-height: 64px;
+	vertical-align:middle;
 }
 
 @media(max-width: 480px) {
