@@ -350,6 +350,14 @@ h3.profile-title {
 	text-align:center;
 }
 
+.transfer p{
+	text-align:center;
+}
+
+.transfer img{
+	width:50vw;
+}
+
 @media screen and (min-width: 990px) and (max-width: 1290px) {
 	.single-project img,video{
 	width:15vw;
