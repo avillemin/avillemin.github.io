@@ -455,6 +455,10 @@ h3.profile-title {
   }
 }
 
+.link {
+	word-wrap:break-word;
+}
+
 .toggle-menu {
   width: 100%;
   display: block;
@@ -536,12 +540,13 @@ h3.profile-title {
 }
 
 #article .card-head{
-	height:60px;
+	height:100%;
 }
 
 #article .card-title{
 	padding-top: 20px;
 	padding-left:20px;
+	padding-bottom: 20px;
 }
 
 .card-head {
