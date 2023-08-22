@@ -46,10 +46,10 @@
                     <ul class="navigation">
 						<li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
 						<li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
+						<li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
 						<li><a href="#skills"><i class="fa fa-laptop"></i>Skills</a></li>
 						<li><a href="#education"><i class="fa fa-book"></i>Education</a></li>
 						<li><a href="#experience"><i class="fa fa-briefcase"></i>Experiences</a></li>
-						<li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
 						<li><a href="#contact"><i class="fa fa-link"></i>Resume</a></li>
                     </ul>
                 </div>
@@ -69,10 +69,10 @@
                 <ul class="navigation">
                     <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
                     <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
+					<li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
 					<li><a href="#skills"><i class="fa fa-laptop"></i>Skills</a></li>
 					<li><a href="#education"><i class="fa fa-book"></i>Education</a></li>
 					<li><a href="#experience"><i class="fa fa-briefcase"></i>Experiences</a></li>
-                    <li><a href="#projects"><i class="fa fa-paperclip"></i>Projects</a></li>
                     <li><a href="#contact"><i class="fa fa-link"></i>Resume</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
@@ -89,7 +89,7 @@
             <div class="banner-overlay"></div>
             <div class="welcome-text">
                 <h2>Senior Data Scientist | Personal Portfolio</h2>
-                <h5>Looking for a job in Artificial Intelligence</h5>
+                <h5>Looking for a new opportunity as Senior Data Scientist - starting beginning of January 2024</h5>
             </div>
         </div>
 
@@ -104,7 +104,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">Learn About Me</h4>
-							<p>Specialized in Artificial Intelligence with a preference in Reinforcement Learning and Natural Language Processing, I invest a lot of my time in learning new things through online courses. I believe that it's important to be a fast-learner in the IA world as new progress are made every day. What is in development right now is going to change the future and I want to be part of it.</p>
+							<p>Specialized in Artificial Intelligence with a preference in Reinforcement Learning and Natural Language Processing, I invest a lot of my time in developing my knowledge through online courses. I believe that it's important to be a fast-learner in the IA world as new progress are made every day.</p>
                             <p><br>Looking forward to working together!<br>&nbsp;</p>
 							<h4 class="widget-title"><br>Contact </h4><p>You can contact me at <b>antoninvillemin@hotmail.fr</b></p>
 							<p>Or with LinkedIn at <b><a class="link" href="https://www.linkedin.com/in/antonin-villemin/">https://www.linkedin.com/in/antonin-villemin/</a></b></p>
@@ -112,6 +112,187 @@
                         </div>
                     </div> <!-- #about -->
                     </div>
+					
+					<!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Personal projects</h4>
+                        </div>
+                    </div>					
+					<br>
+					
+						<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Generative model for lyrics generation using GPT2</b></p></div></div>
+							<div class="card-text">
+							<p><b>Goal:</b> Understand generative models and use a pretrained model on a specific dataset.</p>
+							<p>The idea was to understand the methods used by the generative models to generate new information. I fine-tuned a GPT2 model on a dataset containing english lyrics. Then, I asked GPT2 to generate new lyrics. The fine-tuned model was performing better at trying to predict the end of lyrics than the original model.</p>
+							<div class="single-project">
+								<p><br>
+								<img src="img/generative.png" alt=""><img src="img/lyrics.jpg" alt=""><img src="img/gpt2.png" alt=""> </p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/GenerativeIA/blob/main/GPT2_lyrics_generation.ipynb"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+						</div>
+						
+											       <div class="card" id="article">
+						<div class="card-head">
+						<div class="card-title"><b><i class="fa fa-github"></i> Natural Language Inference</b></p></div></div>
+						<div class="card-text">
+						<p>The SNLI corpus is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE).  I had to develop an IA able to determine if one given statement semantically entails another given statement.</p>
+						<p>This project was a good oppportunity for me to implement different state-of-the-art NLP algorithms like bi-directionnal LSTM using word2vec, BERT, RoBERTa.</p>
+						<br>
+						<img class="tsf-img" src="img/nlpproject.jpg" alt="Card image cap">	
+						</div>
+							<div class="card-footer">
+								<p><a href="https://colab.research.google.com/drive/1lfCPxozRf2iPUtyQqOQtz2Uc16N-_rCo?usp=sharing"><i class="fa fa-github"></i> Link to my Colab</a></p>
+							</div>
+						</div>
+						
+						<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Learn to smell: Predicting smell of molecular compounds</b></p></div></div>
+							<div class="card-text">
+							<p>Machine Learning Challenge: <a class="link" href="https://www.aicrowd.com/challenges/learning-to-smell">https://www.aicrowd.com/challenges/learning-to-smell</a><br></p></p>
+							<p><b>Goal:</b> Take molecular compounds as an input, parse them through, and predict what multitude of fragrances they contain out of 100+ different ones.</p>
+							<p>Exemple: Input=<b>CC(CC(=O)OC1CC2C(C1(C)CC2)(C)C)C</b>, Output=<b>coniferous,camphor,fruity</b></p>
+							<p>My idea was to consider the input as a classic text as commonly seen in any NLP problems, then use a transformer to predict the fragences.</p>
+							<div class="single-project">
+								<p><br>
+								<img src="img/smell.jpg" alt=""><img src="img/molecule.png" alt=""><img src="img/smell2.jpg" alt=""> </p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://colab.research.google.com/drive/17dH0-XAGXKJWA9BgU4mGBrerSfnSLm7J?usp=sharing"><i class="fa fa-github"></i> Link to my Colab</a></p>
+								</div>
+						</div>
+						
+						
+						<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> World Model and Deep NeuroEvolution</b></p></div></div>
+							<div class="card-text">
+							<p>Project realized according to the following online course - <a class="link" href="https://www.udemy.com/artificial-intelligence-masterclass/">https://www.udemy.com/artificial-intelligence-masterclass/</a></p>
+							<p>Original work - <a class="link" href="https://worldmodels.github.io/">https://worldmodels.github.io/</a><br></p>
+							<br>
+							<p><b>Abstract:</b>We explore building generative neural network models of popular reinforcement learning environments. Our world model can be trained quickly in an unsupervised manner to learn a compressed spatial and temporal representation of the environment. By using features extracted from the world model as inputs to an agent, we can train a very compact and simple policy that can solve the required task. We can even train our agent entirely inside of its own dream environment generated by its world model, and transfer this policy back into the actual environment.</p>
+							<p><br>We can see below the network, the evolution strategy applied to the controller and the final result on a self-driving car.</p>
+							<div class="single-project">
+								<p><br>
+								<img src="img/1.jpg" alt=""><img src="img/cmaes.gif" alt=""> <video autoplay muted playsinline loop><source src="img/car.mp4" type="video/mp4"></video> </p>
+							</div>
+							<br>
+							<p>To realized this project, I had to develop a <b>hybrid IA</b>: it combines all the state of the art models of the different AI branches, including Deep Learning, Deep Reinforcement Learning, Policy Gradient, and Deep NeuroEvolution.</p>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/SuperDataScience-Courses/tree/master/Hybrid%20AI"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+						</div>
+					
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Augmented Random Search</b></p></div></div>
+							<div class="card-text">
+							<p><b>Goal</b> : Implementation of a random search method for training static, linear policies for continuous control problems, matching state-of-the-art sample efficiency on the benchmark MuJoCo locomotion tasks. </p>
+							<p>The problem aims to optimize reward by directly optimizing over the static policy parameters θ.</p>
+							<p>This method as been developed in the following research paper - <a class="link" href="https://arxiv.org/pdf/1803.07055.pdf">https://arxiv.org/pdf/1803.07055.pdf</a><br></p>
+							<div class="single-project">
+								<p><br><img src="img/ars0.gif" alt=""> <img src="img/ars1.gif" alt=""> <img src="img/ars.gif" alt=""></p>
+								<p><img src="img/duck2.gif" alt=""> <img src="img/duck1.gif" alt=""> <img src="img/duck.gif" alt=""></p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/SuperDataScience-Courses/tree/master/Augmented%20Random%20Search"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+					
+										
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Generative Adversarial Networks</b></p></div></div>
+							<div class="card-text">
+							<p>GANs are generative models devised by Goodfellow et al. in 2014. In a GAN setup, two differentiable functions, represented by neural networks, are locked in a game. The two players (the generator and the discriminator) have different roles in this framework, as we will se below. In this repository, I'm trying to generate hand-written digits as below. To do this, I had to learn what is a GAN and how it works.</p>
+							<div class="single-project">
+								<p><br><img src="img/GANS.png" alt=""><img src="img/gan.gif" alt=""><img src="img/dcgan.png" alt=""></p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/GANs"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+					
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Reinforcement Learning in Minecraft</b></p></div></div>
+							<div class="card-text">
+							<p>I wanted to create my own bot from scratch to realize different tasks. The first task that I completed was to run inside a maze in order to reach a final block, without falling into the lava.</p>
+							<p>I first apply a Q-learning algorithm, taking as input the position of the player. The goal was to reach the blue block inside a static maze. Then I realized a deep Q-learning algorithm, taking as input the image seen by the player. The final reward and the maze are evolving at each try. I also started to realize the same task with a A3C algorithm, but I still have to finish it.</p>
+							<div class="single-project">
+								<p><br><img src="img/dqn.png" alt="">&nbsp;&nbsp;&nbsp; <img src="img/mi.gif" alt="">&nbsp;&nbsp;&nbsp; <img src="img/a3c.png" alt=""></p>
+							</div>
+							<br>
+							<p>Finally, I applied a World Model seen in the project above to resolve this task   .</p>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/Minecraft-AI"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+					
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Understand Style Transfer</b></p></div></div>
+							<div class="card-text">
+							<p>My goal with this project was to understand the mathematics behind a Style Transfer, and to apply it. The code comes directly from the PyTorch website, I didn't do it by my own. It is using the pretrained network VGG-19. </p>
+							<div class="single-project">
+								<p><br><img src="img/transfer.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vgg19.jpg" alt=""></p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/Style-Transfer"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+					
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Kaggle Competitions</b></p></div></div>
+							<div class="card-text">
+							<p>I realized two Kaggle challenges on my free time.</p>
+							<p>The goal of the first one was to predict the sales price of each house in the dataset, thanks to 79 explanatory variables describing every aspect of residential homes.</p>
+							<p>The goal of the second was to create a Digit Recognizer. The model takes as input a hand-written digit and it has to predict what is the corresponding digit.</p>
+							<div class="single-project">
+								<p>
+								<img src="img/price.jpg" alt=""><img src="img/digit.png" alt=""><img src="img/cm.png" alt=""></p>
+							</div>
+							<p>My goal wasn't to reach the top 1% of the leader board but only to get experience in machine learning. That's why I realized very basic models.</p>
+							<br>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/Machine-Learning-Challenges"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+					
+					<div class="card" id="article">
+							<div class="card-head">
+							<div class="card-title"><b><i class="fa fa-github"></i> Datascience Total - Challenge Mines Télécom</b></p></div></div>
+							<div class="card-text">
+							<p>Datascience competition between 13 engineering schools in France, organized by Total: <a href="https://datascience.total.com/fr/challenge/9/details#tab_ranking">link</a>.</p>
+							<p>The goal of this competition was to predict the daily sells of 204 articles in two different shops. I was selected to send a report about my solution. You can find it, in French, on my GitHub.</p>
+							<p>My rank: 2nd over 176 participants.</p>
+							<div class="single-project">
+								<p>
+								<img src="img/total.png" alt=""><img src="img/mines.jpg" alt=""></p>
+							</div>
+							</div>
+								<div class="card-footer">
+									<p><a href="https://github.com/avillemin/Machine-Learning-Challenges/tree/master/Datascience%20Total"><i class="fa fa-github"></i> Link to my GitHub</a></p>
+								</div>
+					</div>
+				
+                    </div>
+                    <hr>
                     
 					<!-- SKILLS -->
                     <div class="page-section" id="skills">
@@ -458,165 +639,7 @@
                     </div> <!-- #about -->
                     </div>
 					
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Personal projects</h4>
-                        </div>
-                    </div>					
-					<br>
-					
-										<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> World Model and Deep NeuroEvolution</b></p></div></div>
-							<div class="card-text">
-							<p>Project realized according to the following online course - <a class="link" href="https://www.udemy.com/artificial-intelligence-masterclass/">https://www.udemy.com/artificial-intelligence-masterclass/</a></p>
-							<p>Original work - <a class="link" href="https://worldmodels.github.io/">https://worldmodels.github.io/</a><br></p>
-							<br>
-							<p><b>Abstract:</b>We explore building generative neural network models of popular reinforcement learning environments. Our world model can be trained quickly in an unsupervised manner to learn a compressed spatial and temporal representation of the environment. By using features extracted from the world model as inputs to an agent, we can train a very compact and simple policy that can solve the required task. We can even train our agent entirely inside of its own dream environment generated by its world model, and transfer this policy back into the actual environment.</p>
-							<p><br>We can see below the network, the evolution strategy applied to the controller and the final result on a self-driving car.</p>
-							<div class="single-project">
-								<p><br>
-								<img src="img/1.jpg" alt=""><img src="img/cmaes.gif" alt=""> <video autoplay muted playsinline loop><source src="img/car.mp4" type="video/mp4"></video> </p>
-							</div>
-							<br>
-							<p>To realized this project, I had to develop a <b>hybrid IA</b>: it combines all the state of the art models of the different AI branches, including Deep Learning, Deep Reinforcement Learning, Policy Gradient, and Deep NeuroEvolution.</p>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/SuperDataScience-Courses/tree/master/Hybrid%20AI"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Augmented Random Search</b></p></div></div>
-							<div class="card-text">
-							<p><b>Goal</b> : Implementation of a random search method for training static, linear policies for continuous control problems, matching state-of-the-art sample efficiency on the benchmark MuJoCo locomotion tasks. </p>
-							<p>The problem aims to optimize reward by directly optimizing over the static policy parameters θ.</p>
-							<p>This method as been developed in the following research paper - <a class="link" href="https://arxiv.org/pdf/1803.07055.pdf">https://arxiv.org/pdf/1803.07055.pdf</a><br></p>
-							<div class="single-project">
-								<p><br><img src="img/ars0.gif" alt=""> <img src="img/ars1.gif" alt=""> <img src="img/ars.gif" alt=""></p>
-								<p><img src="img/duck2.gif" alt=""> <img src="img/duck1.gif" alt=""> <img src="img/duck.gif" alt=""></p>
-							</div>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/SuperDataScience-Courses/tree/master/Augmented%20Random%20Search"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-										
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Generative Adversarial Networks</b></p></div></div>
-							<div class="card-text">
-							<p>GANs are generative models devised by Goodfellow et al. in 2014. In a GAN setup, two differentiable functions, represented by neural networks, are locked in a game. The two players (the generator and the discriminator) have different roles in this framework, as we will se below. In this repository, I'm trying to generate hand-written digits as below. To do this, I had to learn what is a GAN and how it works.</p>
-							<div class="single-project">
-								<p><br><img src="img/GANS.png" alt=""><img src="img/gan.gif" alt=""><img src="img/dcgan.png" alt=""></p>
-							</div>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/GANs"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Reinforcement Learning in Minecraft</b></p></div></div>
-							<div class="card-text">
-							<p>I wanted to create my own bot from scratch to realize different tasks. The first task that I completed was to run inside a maze in order to reach a final block, without falling into the lava.</p>
-							<p>I first apply a Q-learning algorithm, taking as input the position of the player. The goal was to reach the blue block inside a static maze. Then I realized a deep Q-learning algorithm, taking as input the image seen by the player. The final reward and the maze are evolving at each try. I also started to realize the same task with a A3C algorithm, but I still have to finish it.</p>
-							<div class="single-project">
-								<p><br><img src="img/dqn.png" alt="">&nbsp;&nbsp;&nbsp; <img src="img/mi.gif" alt="">&nbsp;&nbsp;&nbsp; <img src="img/a3c.png" alt=""></p>
-							</div>
-							<br>
-							<p>Finally, I applied a World Model seen in the project above to resolve this task   .</p>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/Minecraft-AI"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Understand Style Transfer</b></p></div></div>
-							<div class="card-text">
-							<p>My goal with this project was to understand the mathematics behind a Style Transfer, and to apply it. The code comes directly from the PyTorch website, I didn't do it by my own. It is using the pretrained network VGG-19. </p>
-							<div class="single-project">
-								<p><br><img src="img/transfer.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vgg19.jpg" alt=""></p>
-							</div>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/Style-Transfer"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Kaggle Competitions</b></p></div></div>
-							<div class="card-text">
-							<p>I realized two Kaggle challenges on my free time.</p>
-							<p>The goal of the first one was to predict the sales price of each house in the dataset, thanks to 79 explanatory variables describing every aspect of residential homes.</p>
-							<p>The goal of the second was to create a Digit Recognizer. The model takes as input a hand-written digit and it has to predict what is the corresponding digit.</p>
-							<div class="single-project">
-								<p>
-								<img src="img/price.jpg" alt=""><img src="img/digit.png" alt=""><img src="img/cm.png" alt=""></p>
-							</div>
-							<p>My goal wasn't to reach the top 1% of the leader board but only to get experience in machine learning. That's why I realized very basic models.</p>
-							<br>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/Machine-Learning-Challenges"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-					
-					<div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Datascience Total - Challenge Mines Télécom</b></p></div></div>
-							<div class="card-text">
-							<p>Datascience competition between 13 engineering schools in France, organized by Total: <a href="https://datascience.total.com/fr/challenge/9/details#tab_ranking">link</a>.</p>
-							<p>The goal of this competition was to predict the daily sells of 204 articles in two different shops. I was selected to send a report about my solution. You can find it, in French, on my GitHub.</p>
-							<p>My rank: 2nd over 176 participants.</p>
-							<div class="single-project">
-								<p>
-								<img src="img/total.png" alt=""><img src="img/mines.jpg" alt=""></p>
-							</div>
-							</div>
-								<div class="card-footer">
-									<p><a href="https://github.com/avillemin/Machine-Learning-Challenges/tree/master/Datascience%20Total"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-					</div>
-
-					       <div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> Natural Language Inference</b></p></div></div>
-							<div class="card-text">
-							<p>The SNLI corpus is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE).  I had to develop an IA able to determine if one given statement semantically entails another given statement.</p>
-                            <p>This project was a good oppportunity for me to implement different state-of-the-art NLP algorithms like bi-directionnal LSTM using word2vec, BERT, RoBERTa.</p>
-                            <br>
-                            <img class="tsf-img" src="img/nlpproject.jpg" alt="Card image cap">	
-							</div>
-								<div class="card-footer">
-									<p> </p>
-								</div>
-							</div>
-
-					       <div class="card" id="article">
-							<div class="card-head">
-							<div class="card-title"><b><i class="fa fa-github"></i> One-shot face recognition [IN PROGRESS]</b></p></div></div>
-							<div class="card-text">
-							<p>In face recognition systems, we want to be able to recognize a person’s identity by just feeding one picture of that person’s face to the system. And, in case, it fails to recognize the picture, it means that this person’s image is not stored in the system’s database.</p>
-                            <img class="tsf-img" src="img/oneshot.png" alt="Card image cap">
-                                
-                            <p>Modern face recognition systems approach the problem of one-shot learning via face recognition by learning a rich low-dimensional feature representation, called a face embedding, that can be calculated for faces easily and compared for verification and identification tasks.</p>
-							</div>
-								<div class="card-footer">
-                                    <p><a href="https://github.com/avillemin/One-Shot-Learning-for-Face-Recognition"><i class="fa fa-github"></i> Link to my GitHub</a></p>
-								</div>
-							</div>
-					
-                    </div>
-                    <hr>
+                    
 
                     <!-- CONTACT -->
                     <div class="page-section" id="contact">
